@@ -1,0 +1,10 @@
+[ubuntu]
+[ubuntu]
+18.217.81.26	ansible_user=ubuntu
+
+[amzl]
+3.133.90.163	ansible_user=ec2-user
+
+[linux:children]
+ubuntu
+amzl	ansible_user=ubuntu
